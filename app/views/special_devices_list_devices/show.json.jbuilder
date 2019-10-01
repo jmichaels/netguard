@@ -1,0 +1,1 @@
+json.partial! "special_device_list_devices/special_device_list_device", special_device_list_device: @special_device_list_device

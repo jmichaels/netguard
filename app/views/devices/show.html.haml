@@ -1,0 +1,69 @@
+.card
+  .card-body
+    %h5.card-title= @device.hostname
+    %table.table
+      %tr
+        %td
+          %b Hostname
+        %td
+          = @device.ip_address
+      %tr
+        %td
+          %b Device Type
+        %td
+          = @device.category
+      %tr
+        %td
+          %b Manufacturer
+        %td
+          = @device.manufacturer
+      %tr
+        %td
+          %b MAC Address
+        %td
+          = @device.mac_address
+      %tr
+        %td
+          %b Operating System
+        %td
+          = @device.operating_system + @device.operating_system_version
+      %tr
+        %td
+          %b Memory Total
+        %td
+          = @device.memory_total_gb.to_s + " GB"
+      %tr
+        %td
+          %b Memory Used
+        %td
+          = @device.memory_used_gb.to_s + " GB"
+      %tr
+        %td
+          %b Storage Capacity
+        %td
+          = @device.storage_capacity_tb.to_s + " TB"
+      %tr
+        %td
+          %b Storage Used
+        %td
+          = @device.storage_used_tb.to_s + " TB"
+      %tr
+        %td
+          %b Processor Name
+        %td
+          = @device.processor_name
+      %tr
+        %td
+          %b Processor Cores
+        %td
+          = @device.processor_cores
+      %tr
+        %td
+          %b Processor Threads
+        %td
+          = @device.processor_threads
+      %tr
+        %td
+          %b Processor Clock Speed
+        %td
+          = @device.processor_clock_speed_ghz.to_s + " GHz"

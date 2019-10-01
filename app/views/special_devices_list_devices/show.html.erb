@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Special device list:</strong>
+  <%= @special_device_list_device.special_device_list_id %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @special_device_list_device.device_id %>
+</p>
+
+<%= link_to 'Edit', edit_special_device_list_device_path(@special_device_list_device) %> |
+<%= link_to 'Back', special_device_list_devices_path %>

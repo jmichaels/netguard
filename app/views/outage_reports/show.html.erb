@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @outage_report.category %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @outage_report.device_id %>
+</p>
+
+<p>
+  <strong>Started at:</strong>
+  <%= @outage_report.started_at %>
+</p>
+
+<p>
+  <strong>Ended at:</strong>
+  <%= @outage_report.ended_at %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @outage_report.description %>
+</p>
+
+<%= link_to 'Edit', edit_outage_report_path(@outage_report) %> |
+<%= link_to 'Back', outage_reports_path %>

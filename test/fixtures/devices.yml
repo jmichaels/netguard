@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostname: MyString
+  ip_address: MyString
+  category: MyString
+  manufacturer: MyString
+  mac_address: MyString
+  operating_system: MyString
+  operating_system_version: MyString
+  memory_total_gb: 9.99
+  memory_used_gb: 9.99
+  storage_capacity_gb: 9.99
+  storage_used_gb: 9.99
+  processor_name: MyString
+  processor_cores: 1
+  processor_threads: 1
+  processor_clock_speed_ghz: 9.99
+
+two:
+  hostname: MyString
+  ip_address: MyString
+  category: MyString
+  manufacturer: MyString
+  mac_address: MyString
+  operating_system: MyString
+  operating_system_version: MyString
+  memory_total_gb: 9.99
+  memory_used_gb: 9.99
+  storage_capacity_gb: 9.99
+  storage_used_gb: 9.99
+  processor_name: MyString
+  processor_cores: 1
+  processor_threads: 1
+  processor_clock_speed_ghz: 9.99

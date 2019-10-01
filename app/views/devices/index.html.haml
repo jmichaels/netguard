@@ -1,0 +1,42 @@
+.text-center
+  %h1
+    %i.fal.fa-desktop
+    Devices
+
+.table-responsive
+  %table.table.responsive.display.nowrap
+    %thead
+      %tr
+        %th Hostname
+        %th IP Address
+        %th Device Type
+        %th Manufacturer
+        %th MAC Address
+        %th OS
+        %th OS Version
+        %th Memory Total
+        %th Memory Used
+        %th Storage Capacity
+        %th Storage Used
+        %th Processor Name
+        %th Processor Cores
+        %th Processor Threads
+        %th Processor Speed
+    %tbody
+      - @devices.each do |device|
+        %tr
+          %td= link_to device.hostname, device
+          %td= device.ip_address
+          %td= device.category
+          %td= device.manufacturer
+          %td= device.mac_address
+          %td= device.operating_system
+          %td= device.operating_system_version
+          %td= device.memory_total_gb
+          %td= device.memory_used_gb
+          %td= device.storage_capacity_tb
+          %td= device.storage_used_tb
+          %td= device.processor_name
+          %td= device.processor_cores
+          %td= device.processor_threads
+          %td= device.processor_clock_speed_ghz
