@@ -8,7 +8,7 @@ class DevicesController < ApplicationController
       format.json do
         @devices = Device.paginate(page: params[:page], per_page: 50)
         response = {
-          returned_records: @devices.count,
+          returned_records: @devices.length,
           results: @devices
         }
         render json: response.to_json
